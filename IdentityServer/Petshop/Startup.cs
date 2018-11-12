@@ -37,6 +37,17 @@ namespace Petshop
                     options.RequireHttpsMetadata = false;
                     options.ApiName = "petstore";
                 });
+
+            services.AddCors(options =>
+            {
+                // this defines a CORS policy called "default"
+                options.AddPolicy("default", policy =>
+                {
+                    policy.WithOrigins("https://localhost:5031")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +63,7 @@ namespace Petshop
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("default");
             app.UseAuthentication();
             app.UseMvc();
         }
