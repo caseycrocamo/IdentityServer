@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petshop.Api", "Petshop\Pets
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petshop.ConsoleApp", "Petshop.Console\Petshop.ConsoleApp.csproj", "{6010E1C2-F031-43C7-B31D-CB5EA20E6D77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petshop.Web", "Petshop.Web\Petshop.Web.csproj", "{0608EE83-4203-4FFA-BDAA-C35DFD28B362}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petshop.Web", "Petshop.Web\Petshop.Web.csproj", "{0608EE83-4203-4FFA-BDAA-C35DFD28B362}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petshop.SPA", "Petshop.SPA\Petshop.SPA.csproj", "{4F8015EA-BDD6-4ED4-BA57-64C3ADE58A45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petshop.SPA", "Petshop.SPA\Petshop.SPA.csproj", "{4F8015EA-BDD6-4ED4-BA57-64C3ADE58A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petshop.Angular", "Petshop.Angular\Petshop.Angular.csproj", "{AE85DB51-12B5-49C8-BE93-1645446CC789}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4F8015EA-BDD6-4ED4-BA57-64C3ADE58A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F8015EA-BDD6-4ED4-BA57-64C3ADE58A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F8015EA-BDD6-4ED4-BA57-64C3ADE58A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE85DB51-12B5-49C8-BE93-1645446CC789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE85DB51-12B5-49C8-BE93-1645446CC789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE85DB51-12B5-49C8-BE93-1645446CC789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE85DB51-12B5-49C8-BE93-1645446CC789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
