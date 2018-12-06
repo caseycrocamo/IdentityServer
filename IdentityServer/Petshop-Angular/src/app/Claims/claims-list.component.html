@@ -1,0 +1,21 @@
+<div class='card'>
+    <div class='card-header'>
+        {{title}}
+    </div>
+    <div class='card-body'>
+        <table class='table' *ngIf="claims && claims.any()">
+            <Thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+            </Thead>
+            <tbody>
+                <tr *ngFor='let claim of claims'>
+                    <td>{{claim.key}}</td>
+                    <td>{{claim.value}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
