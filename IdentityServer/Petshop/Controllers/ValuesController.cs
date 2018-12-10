@@ -12,9 +12,27 @@ namespace Petshop.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            var claims = new List<Claim>
+            {
+                new Claim
+                {
+                    Type = "username",
+                    Value = "test@gmail.com"
+                },
+                new Claim
+                {
+                    Type = "firstname",
+                    Value = "Steve"
+                },
+                new Claim
+                {
+                    Type = "lastname",
+                    Value = "Smith"
+                }
+            };
+            return new JsonResult(claims);
         }
 
         // GET api/values/5
@@ -41,5 +59,11 @@ namespace Petshop.Controllers
         public void Delete(int id)
         {
         }
+    }
+
+    public class Claim
+    {
+        public string Type { get; set; }
+        public string Value { get; set; }
     }
 }

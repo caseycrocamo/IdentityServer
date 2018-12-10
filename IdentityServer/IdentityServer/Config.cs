@@ -63,9 +63,9 @@ namespace IdentityServer
                     ClientName = "Single Page App Client",
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
-                    RedirectUris = { "https://localhost:5031/callback.html" },
-                    PostLogoutRedirectUris = { "https://localhost:5031/index.html" },
-                    AllowedCorsOrigins = { "https://localhost:5031" },
+                    RedirectUris = { "https://localhost:5031/callback.html", "http://localhost:4200" },
+                    PostLogoutRedirectUris = { "https://localhost:5031/index.html", "http://localhost:4200/index.html" },
+                    AllowedCorsOrigins = { "https://localhost:5031", "http://localhost:4200" },
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,

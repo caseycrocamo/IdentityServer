@@ -3,16 +3,16 @@
         {{title}}
     </div>
     <div class='card-body'>
-        <table class='table' *ngIf="claims && claims.any()">
+        <table class='table'>
             <Thead>
                 <tr>
-                    <th>Key</th>
+                    <th>Type</th>
                     <th>Value</th>
                 </tr>
             </Thead>
             <tbody>
                 <tr *ngFor='let claim of claims'>
-                    <td>{{claim.key}}</td>
+                    <td>{{claim.type}}</td>
                     <td>{{claim.value}}</td>
                 </tr>
             </tbody>
