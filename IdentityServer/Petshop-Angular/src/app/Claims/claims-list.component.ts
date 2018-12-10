@@ -15,9 +15,13 @@ export class ClaimsListComponent {
     }
 
     ngOnInit(): void{
+        this.getClaims();
+    }
+
+    getClaims(): void{
         this.claimsService.getClaims().subscribe(
             claims => this.claims = claims,
-            error => this.errorMessage = <any>error
+            error => this.errorMessage = JSON.stringify(<any>error)
         );
     }
 }

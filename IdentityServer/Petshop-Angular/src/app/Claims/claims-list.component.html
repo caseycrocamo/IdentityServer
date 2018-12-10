@@ -3,7 +3,11 @@
         {{title}}
     </div>
     <div class='card-body'>
-        <table class='table'>
+        <div *ngIf='claims === null'>
+            <small>{{errorMessage}}</small>
+            <button (click)='getClaims()'>Hit Api</button>
+        </div>
+        <table class='table' *ngIf='claims !== null'>
             <Thead>
                 <tr>
                     <th>Type</th>
